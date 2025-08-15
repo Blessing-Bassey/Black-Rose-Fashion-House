@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Products | Black Rose Fashion House</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="logo" href="index.html">
+          <span class="logo-rose">Black</span> Rose
+          <span class="logo-sub">Fashion House</span>
+        </a>
+        <nav class="nav">
+          <a href="index.html">Home</a>
+          <a href="products.html">Products</a>
+          <a href="trustees.html">Board of Trustees</a>
+          <a href="events.html">Events</a>
+          <a href="inquiries.html">Inquiries</a>
+        </nav>
+      </div>
+      <!-- Required marquee present on ALL pages -->
+      <div class="marquee-wrap">
+        <marquee behavior="scroll" direction="left" class="marquee-text">
+          🖤 Black Rose Fashion House — New Collection “Midnight Bloom” drops
+          this weekend! • Pop-up runway at Lekki, Lagos • Book fittings &
+          appointments now • Follow us @blackrosefashion
+        </marquee>
+      </div>
+    </header>
+    <main class="container">
+      <h1 class="page-title">Collections</h1>
+      <div class="filters">
+        <button class="filter-btn" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="gowns">Gowns</button>
+        <button class="filter-btn" data-filter="street">Streetwear</button>
+        <button class="filter-btn" data-filter="bridal">Bridal</button>
+      </div>
+      <div class="product-grid">
+        <div class="product-card" data-cat="gowns">
+          <img src="images/rosenoir.jpg" alt="Rose Noir Gown" />
+          <h3>Rose Noir Gown</h3>
+          <p>Bias-cut satin with embroidered roses.</p>
+          <span class="price">₦95,000</span>
+        </div>
+        <div class="product-card" data-cat="street">
+          <img src="images/luxebomber.jpg" alt="Luxe Bomber" />
+          <h3>Luxe Bomber</h3>
+          <p>Matte satin bomber with rose-gold zip.</p>
+          <span class="price">₦45,000</span>
+        </div>
+        <div class="product-card" data-cat="bridal">
+          <img src="images/blushtulle.jpg" alt="Blush Bride" />
+          <h3>Blush Bride</h3>
+          <p>Hand-beaded tulle with detachable train.</p>
+          <span class="price">₦250,000</span>
+        </div>
+        <div class="product-card" data-cat="street">
+          <img src="images/tees.jpg" alt="Runway Tee" />
+          <h3>Runway Tee</h3>
+          <p>Oversized tee with Black Rose monogram.</p>
+          <span class="price">₦15,000</span>
+        </div>
+        <div class="product-card" data-cat="gowns">
+          <img src="images/midnightbloom.jpg" alt="Midnight Bloom" />
+          <h3>Midnight Bloom</h3>
+          <p>Velvet gown with rose-gold embroidery.</p>
+          <span class="price">₦120,000</span>
+        </div>
+        <div class="product-card" data-cat="bridal">
+          <img src="images/veil.jpg" alt="Crystal Veil" />
+          <h3>Crystal Veil</h3>
+          <p>Cathedral length veil with crystal scatter.</p>
+          <span class="price">₦60,000</span>
+        </div>
+      </div>
+    </main>
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>
+          © <span id="year"></span> Black Rose Fashion House. All rights
+          reserved.
+        </p>
+        <a href="#" id="backToTop" class="back-to-top" aria-label="Back to top"
+          >↑</a
+        >
+      </div>
+    </footer>
+  </body>
+</html>

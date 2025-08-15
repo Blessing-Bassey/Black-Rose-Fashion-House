@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Upcoming Events | Black Rose Fashion House</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="logo" href="index.html">
+          <span class="logo-rose">Black</span> Rose
+          <span class="logo-sub">Fashion House</span>
+        </a>
+        <nav class="nav">
+          <a href="index.html">Home</a>
+          <a href="products.html">Products</a>
+          <a href="trustees.html">Board of Trustees</a>
+          <a href="events.html">Events</a>
+          <a href="inquiries.html">Inquiries</a>
+        </nav>
+      </div>
+      <!-- Required marquee present on ALL pages -->
+      <div class="marquee-wrap">
+        <marquee behavior="scroll" direction="left" class="marquee-text">
+          🖤 Black Rose Fashion House — New Collection “Midnight Bloom” drops
+          this weekend! • Pop-up runway at Lekki, Lagos • Book fittings &
+          appointments now • Follow us @blackrosefashion
+        </marquee>
+      </div>
+    </header>
+    <main class="container">
+      <h1 class="page-title">Upcoming Events</h1>
+      <div id="nextEventNotice" class="notice"></div>
+      <div class="events-grid">
+        <article class="event-card" data-date="2025-09-06T15:00:00">
+          <img src="images/lekkirunaway.jpg" alt="Lekki Pop-up Runway" />
+          <div class="event-body">
+            <h3>Lekki Pop‑up Runway</h3>
+            <p>Outdoor runway featuring the “Midnight Bloom” collection.</p>
+            <p class="event-meta">Lekki, Lagos • Sat 3PM</p>
+            <div class="countdown" aria-live="polite"></div>
+          </div>
+        </article>
+        <article class="event-card" data-date="2025-10-12T13:00:00">
+          <img src="images/bridalshow.jpg" alt="Bridal Trunk Show" />
+          <div class="event-body">
+            <h3>Bridal Trunk Show</h3>
+            <p>Private fittings with our bridal atelier.</p>
+            <p class="event-meta">VI, Lagos • Sun 1PM</p>
+            <div class="countdown"></div>
+          </div>
+        </article>
+        <article class="event-card" data-date="2025-11-03T17:30:00">
+          <img src="images/streetluxe.jpg" alt="Street Luxe Drop" />
+          <div class="event-body">
+            <h3>Street Luxe Drop</h3>
+            <p>Limited streetwear drop & live customization.</p>
+            <p class="event-meta">Yaba, Lagos • Mon 5:30PM</p>
+            <div class="countdown"></div>
+          </div>
+        </article>
+      </div>
+    </main>
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>
+          © <span id="year"></span> Black Rose Fashion House. All rights
+          reserved.
+        </p>
+        <a href="#" id="backToTop" class="back-to-top" aria-label="Back to top"
+          >↑</a
+        >
+      </div>
+    </footer>
+  </body>
+</html>

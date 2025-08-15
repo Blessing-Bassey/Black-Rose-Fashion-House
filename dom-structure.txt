@@ -1,0 +1,108 @@
+BLACK ROSE FASHION HOUSE — DOM STRUCTURE (for submission)
+========================================================
+
+Note: This is NOT a website page. It's a separate document describing the DOM.
+
+All pages share the same header, marquee, and footer.
+
+<html>
+  <head>
+    <meta>, <title>, Google Fonts links, <link rel="stylesheet" href="styles.css">, <script src="script.js" defer>
+  </head>
+  <body>
+    <header.site-header>
+      <div.container.header-inner>
+        <a.logo> … </a>
+        <nav.nav>
+          <a>Home</a> <a>Products</a> <a>Board of Trustees</a> <a>Events</a> <a>Inquiries</a>
+        </nav>
+      </div>
+      <div.marquee-wrap>
+        <marquee.marquee-text> … scrolling updates … </marquee>
+      </div>
+    </header>
+
+    <!-- Page-specific <main> content -->
+
+    <footer.site-footer>
+      <div.container.footer-inner>
+        <p>© <span#year></span></p>
+        <a#backToTop.back-to-top>↑</a>
+      </div>
+    </footer>
+  </body>
+</html>
+
+HOME (index.html)
+-----------------
+<main>
+  <section.hero>
+    <div.hero-overlay></div>
+    <div.hero-content.container>
+      <h1>, <p>, <div.hero-cta> (<a.btn>, <a.btn>)
+    </div>
+    <div.slideshow>
+      <div.slide.active> … </div>
+      <div.slide> … </div>
+      <div.slide> … </div>
+    </div>
+  </section>
+
+  <section.container.highlights>
+    <h2.section-title>
+    <div.grid-3>
+      <article.card> <img> <div.card-body> <h3> <p> </div> </article> ×3
+    </div>
+  </section>
+
+  <section.container.cta-banner>
+    <h2>, <p>, <a.btn>
+  </section>
+</main>
+
+PRODUCTS (products.html)
+------------------------
+<main.container>
+  <h1.page-title>
+  <div.filters> <button.filter-btn> (All | Gowns | Streetwear | Bridal) </div>
+  <div.product-grid>
+    <div.product-card[data-cat]> <img> <h3> <p> <span.price> </span> </div> ×6
+  </div>
+</main>
+
+BOARD OF TRUSTEES (trustees.html)
+---------------------------------
+<main.container>
+  <h1.page-title>, <p.page-lead>
+  <div.trustees-grid>
+    <article.trustee-card> <img> <h3> <p.role> </article> ×4
+  </div>
+</main>
+
+EVENTS (events.html)
+--------------------
+<main.container>
+  <h1.page-title>
+  <div#nextEventNotice.notice>
+  <div.events-grid>
+    <article.event-card[data-date]>
+      <img>
+      <div.event-body> <h3> <p> <p.event-meta> <div.countdown> </div> </div>
+    </article> ×3
+  </div>
+</main>
+
+INQUIRIES (inquiries.html)
+--------------------------
+<main.container>
+  <h1.page-title>, <p.page-lead>
+  <form#contactForm.contact-form novalidate>
+    <div.form-row> <label for=name> <input#name required> <small.error-msg> </small> </div>
+    <div.form-row> <label for=email> <input#email required> <small.error-msg> </small> </div>
+    <div.form-row> <label for=phone> <input#phone> </div>
+    <div.form-row> <label for=date> <input#date required> <small.error-msg> </small> </div>
+    <div.form-row> <label for=message> <textarea#message required> <small.error-msg> </small> </div>
+    <button.btn.btn-primary type=submit>
+    <p#formStatus.form-status>
+  </form>
+</main>

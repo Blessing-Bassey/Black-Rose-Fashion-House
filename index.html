@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home | Black Rose Fashion House</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="logo" href="index.html">
+          <span class="logo-rose">Black</span> Rose
+          <span class="logo-sub">Fashion House</span>
+        </a>
+        <nav class="nav">
+          <a href="index.html">Home</a>
+          <a href="products.html">Products</a>
+          <a href="trustees.html">Board of Trustees</a>
+          <a href="events.html">Events</a>
+          <a href="inquiries.html">Inquiries</a>
+        </nav>
+      </div>
+      <!-- Required marquee present on ALL pages -->
+      <div class="marquee-wrap">
+        <marquee behavior="scroll" direction="left" class="marquee-text">
+          🖤 Black Rose Fashion House — New Collection “Midnight Bloom” drops
+          this weekend! • Pop-up runway at Lekki, Lagos • Book fittings &
+          appointments now • Follow us @blackrosefashion
+        </marquee>
+      </div>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content container">
+          <h1>Where Elegance Meets Edge</h1>
+          <p>
+            Timeless silhouettes, modern tailoring, and a touch of rose-gold
+            drama.
+          </p>
+          <div class="hero-cta">
+            <a href="products.html" class="btn btn-primary">Shop Collections</a>
+            <a href="inquiries.html" class="btn btn-ghost"
+              >Book an Appointment</a
+            >
+          </div>
+        </div>
+        <div class="slideshow" aria-label="Featured Looks Slideshow">
+          <div
+            class="slide active"
+            style="background-image: url('images/midnightbloom.jpg')"
+          ></div>
+          <div
+            class="slide"
+            style="background-image: url('images/streetluxe.jpg')"
+          ></div>
+          <div
+            class="slide"
+            style="background-image: url('images/bridalshow.jpg')"
+          ></div>
+        </div>
+      </section>
+
+      <section class="container highlights">
+        <h2 class="section-title">Signature Highlights</h2>
+        <div class="grid-3">
+          <article class="card">
+            <img src="images/midnightbloom.jpg" alt="Midnight Bloom Gown" />
+            <div class="card-body">
+              <h3>Midnight Bloom</h3>
+              <p>Velvet gowns with rose-gold embroidery. Limited edition.</p>
+            </div>
+          </article>
+          <article class="card">
+            <img src="images/streetluxe.jpg" alt="Street Luxe Jacket" />
+            <div class="card-body">
+              <h3>Street Luxe</h3>
+              <p>
+                Tailored streetwear with couture finishes for day-to-night
+                looks.
+              </p>
+            </div>
+          </article>
+          <article class="card">
+            <img src="images/bridalshow.jpg" alt="Bridal Atelier" />
+            <div class="card-body">
+              <h3>Bridal Atelier</h3>
+              <p>
+                Bespoke bridal pieces with hand-beaded details and fluid drape.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="container cta-banner">
+        <h2>Walk the Black Rose Runway</h2>
+        <p>Join our weekend pop-up runway at Lekki. Seats are limited.</p>
+        <a href="events.html" class="btn btn-primary">See Events</a>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>
+          © <span id="year"></span> Black Rose Fashion House. All rights
+          reserved.
+        </p>
+        <a href="#" id="backToTop" class="back-to-top" aria-label="Back to top"
+          >↑</a
+        >
+      </div>
+    </footer>
+  </body>
+</html>
